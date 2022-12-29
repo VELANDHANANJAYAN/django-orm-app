@@ -10,12 +10,18 @@ Include your ER diagram here
 ## DESIGN STEPS
 
 ### STEP 1:
+Create a django application using ```django-admin startapp <appname>``` in command line.
+Head to the application directory created inside the project directory. Open the models.py file.
+In models.py create two classes one defining the attributes and the other one defining attribute value types.
 
 ### STEP 2:
+In the same directory, Head to admins.py and import the two classes from models.py that you have created earlier.
+Now register your created models in admins.py file and save both the files
 
 ### STEP 3:
+Start the Django server and head over to admin page.
+Using the admin interface, you can add or delete data in the database
 
-Write your own steps
 
 ## PROGRAM
 ### model.py
@@ -50,3 +56,4 @@ admin.site.register(Employee,EmployeeAdmin)
 
 
 ## RESULT
+Hence a Django application to store and retrieve data from a database using Object Relational Mapping(ORM) is developed.
